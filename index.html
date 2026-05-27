@@ -1,0 +1,190 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root{--bg:#FAF7F0;--ink:#0A1620;--ink-2:#1F2A36;--ink-3:#475363;--ink-4:#6B7689;--line:#D7D1C2;
+--accent:#1A4D5B;--copper:#B26A3D;--warning:#9F6B1A;
+--font:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI','Helvetica Neue',Arial,sans-serif;
+--serif:'Charter','Georgia','Iowan Old Style','Times New Roman',serif;--mono:'SF Mono',ui-monospace,Menlo,monospace;}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+html,body{background:#1A1A1A;font-family:var(--font);font-size:14px}
+body{padding:24px;display:flex;justify-content:center}
+.slide{position:relative;width:1280px;height:720px;background:var(--bg);color:var(--ink);overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.4)}
+.stage{position:absolute;left:72px;top:50px;right:72px}
+.eyebrow{font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--accent)}
+.title{font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.05;letter-spacing:-.015em;margin-top:7px;max-width:1010px}
+.title em{font-style:italic;color:var(--copper)}
+.lede{font-size:14.5px;line-height:1.5;color:var(--ink-3);font-family:var(--serif);font-style:italic;max-width:900px;margin-top:7px}
+.chart{position:absolute;left:0;top:0}
+.rail{position:absolute;right:0;top:158px;width:206px}
+.stat{font-family:var(--serif);font-size:58px;line-height:.9;letter-spacing:-.03em} .stat .acc{color:var(--copper)}
+.statlbl{font-size:11px;color:var(--ink-3);line-height:1.4;margin-top:5px}
+.counts{font-family:var(--mono);font-size:10px;letter-spacing:.03em;color:var(--ink-2);margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}
+.legttl{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-4);font-weight:600;margin-top:16px}
+.lg{display:flex;align-items:center;gap:8px;margin-top:7px}
+.sw{width:11px;height:11px;border-radius:50%;flex:none}
+.ll{font-size:10px;color:var(--ink-2)} .ll b{color:var(--ink)}
+.status{display:flex;gap:16px;margin-top:8px;align-items:center}
+.status div{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--ink-2)}
+.dotf{width:11px;height:11px;border-radius:50%;background:var(--ink);flex:none}
+.dotr{width:11px;height:11px;border-radius:50%;border:1.7px solid var(--ink);flex:none}
+.sizes{display:flex;align-items:flex-end;gap:12px;margin-top:9px} .sizes span{font-family:var(--mono);font-size:9px;color:var(--ink-4)}
+.spnote{position:absolute;left:156px;bottom:92px;width:220px;font-size:9.5px;color:var(--warning);line-height:1.35}
+.footer{position:absolute;left:72px;right:72px;bottom:18px;display:flex;justify-content:space-between;
+font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);font-weight:600;border-top:1px solid var(--line);padding-top:9px}
+.src{text-transform:none;letter-spacing:0;color:var(--ink-4);font-weight:400;font-family:var(--mono);font-size:8px}
+</style></head><body>
+<div class="slide">
+  <div class="stage">
+    <div class="eyebrow">What we're building · The atlas</div>
+    <div class="title">Every actionable marker, every indication — <em>read from one tissue section.</em></div>
+    <div class="lede">Each circle is a biomarker × indication; size = the market it gates; solid = validated target,
+      ring = investigational. A single-plex assay reads one column — G4X reads the whole field.</div>
+  </div>
+  <svg class="chart" width="1280" height="720" viewBox="0 0 1280 720"><line x1="150" y1="602.0" x2="968" y2="602.0" stroke="#E8E3D4"/>
+<text x="138" y="605.0" text-anchor="end" font-family="var(--mono)" font-size="10" fill="#6B7689">0%</text>
+<line x1="150" y1="515.5" x2="968" y2="515.5" stroke="#E8E3D4"/>
+<text x="138" y="518.5" text-anchor="end" font-family="var(--mono)" font-size="10" fill="#6B7689">25%</text>
+<line x1="150" y1="429.0" x2="968" y2="429.0" stroke="#E8E3D4"/>
+<text x="138" y="432.0" text-anchor="end" font-family="var(--mono)" font-size="10" fill="#6B7689">50%</text>
+<line x1="150" y1="342.5" x2="968" y2="342.5" stroke="#E8E3D4"/>
+<text x="138" y="345.5" text-anchor="end" font-family="var(--mono)" font-size="10" fill="#6B7689">75%</text>
+<line x1="150" y1="256.0" x2="968" y2="256.0" stroke="#E8E3D4"/>
+<text x="138" y="259.0" text-anchor="end" font-family="var(--mono)" font-size="10" fill="#6B7689">100%</text>
+<line x1="150" y1="252" x2="150" y2="602" stroke="#D7D1C2" stroke-width="1.5"/>
+<line x1="150" y1="602" x2="968" y2="602" stroke="#D7D1C2" stroke-width="1.5"/>
+<text x="110" y="429" transform="rotate(-90 110 429)" text-anchor="middle" font-family="var(--mono)" font-size="10" letter-spacing="0.16em" fill="#475363">FREQUENCY IN DISEASED TISSUE →</text>
+<rect x="153.0" y="252" width="44.3" height="350.0" fill="#1A4D5B" opacity="0.035"/>
+<text x="175.2" y="244" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="0.14em" font-weight="600" fill="#1A4D5B">IO</text>
+<rect x="203.3" y="252" width="321.2" height="350.0" fill="#0A1620" opacity="0.035"/>
+<text x="363.9" y="244" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="0.14em" font-weight="600" fill="#0A1620">TT</text>
+<rect x="530.5" y="252" width="207.9" height="350.0" fill="#B26A3D" opacity="0.035"/>
+<text x="634.5" y="244" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="0.14em" font-weight="600" fill="#B26A3D">ADC</text>
+<rect x="744.5" y="252" width="220.5" height="350.0" fill="#3E6E8E" opacity="0.035"/>
+<text x="854.7" y="244" text-anchor="middle" font-family="var(--mono)" font-size="9.5" letter-spacing="0.14em" font-weight="600" fill="#3E6E8E">CT</text>
+<line x1="150" y1="220" x2="968" y2="220" stroke="#1A4D5B" stroke-width="1.3"/>
+<line x1="150" y1="220" x2="150" y2="226" stroke="#1A4D5B" stroke-width="1.3"/>
+<line x1="968" y1="220" x2="968" y2="226" stroke="#1A4D5B" stroke-width="1.3"/>
+<text x="559" y="213" text-anchor="middle" font-family="var(--mono)" font-size="10" letter-spacing="0.18em" font-weight="600" fill="#1A4D5B">SINGULAR G4X · ONE FFPE SECTION → EVERY MARKER, AT ONCE</text>
+<rect x="155.0" y="252" width="2.6" height="350.0" fill="none" stroke="#9F6B1A" stroke-width="1.1" stroke-dasharray="3 3"/>
+<circle cx="155.1" cy="498.2" r="16.0" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="206.1" cy="550.1" r="16.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="208.3" cy="411.7" r="16.0" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="231.8" cy="463.6" r="16.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="244.4" cy="498.2" r="16.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="532.7" cy="307.9" r="16.0" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="545.3" cy="394.4" r="16.0" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="559.0" cy="366.7" r="16.0" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="747.8" cy="290.6" r="16.0" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="155.9" cy="394.4" r="15.5" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="168.9" cy="394.4" r="15.5" fill="#1A4D5B" fill-opacity="0.10" stroke="#1A4D5B" stroke-width="1.7"/>
+<circle cx="204.9" cy="591.6" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="220.4" cy="557.0" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="257.0" cy="543.2" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="269.6" cy="588.2" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="282.1" cy="595.1" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="294.7" cy="591.6" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="307.3" cy="595.1" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="321.0" cy="598.5" r="15.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="535.0" cy="307.9" r="15.5" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="571.6" cy="314.8" r="15.5" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="584.2" cy="532.8" r="15.5" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="596.8" cy="463.6" r="15.5" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="760.4" cy="273.3" r="13.8" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="772.9" cy="487.8" r="13.8" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="785.5" cy="273.3" r="13.8" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="798.1" cy="273.3" r="13.8" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="345.1" cy="342.5" r="10.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="357.6" cy="325.2" r="10.5" fill="#0A1620" fill-opacity="0.10" stroke="#0A1620" stroke-width="1.7"/>
+<circle cx="810.7" cy="325.2" r="10.5" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="218.1" cy="591.6" r="9.7" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="330.9" cy="570.9" r="9.7" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="157.4" cy="377.1" r="7.9" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="609.3" cy="283.7" r="7.9" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="332.5" cy="429.0" r="7.1" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="621.9" cy="377.1" r="6.9" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="848.4" cy="307.9" r="6.9" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="861.0" cy="325.2" r="6.6" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="156.7" cy="394.4" r="6.3" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="207.2" cy="539.7" r="6.3" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="370.2" cy="470.5" r="6.3" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="382.8" cy="577.8" r="6.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="395.4" cy="560.5" r="6.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="408.0" cy="498.2" r="6.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="634.5" cy="297.5" r="6.0" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="647.1" cy="290.6" r="5.7" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="659.7" cy="273.3" r="5.7" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="672.3" cy="273.3" r="5.7" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="684.8" cy="394.4" r="5.7" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="822.1" cy="273.3" r="5.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="834.7" cy="273.3" r="5.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="873.6" cy="290.6" r="5.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="886.2" cy="273.3" r="5.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="420.6" cy="560.5" r="5.4" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="898.8" cy="342.5" r="5.4" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="433.2" cy="429.0" r="5.3" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="445.7" cy="359.8" r="5.3" fill="#0A1620" fill-opacity="0.10" stroke="#0A1620" stroke-width="1.7"/>
+<circle cx="697.4" cy="480.9" r="5.3" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="710.0" cy="325.2" r="5.3" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="722.6" cy="342.5" r="5.3" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<circle cx="911.4" cy="408.2" r="5.3" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="154.4" cy="515.5" r="5.1" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="458.3" cy="550.1" r="5.1" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="547.6" cy="290.6" r="5.1" fill="#B26A3D" fill-opacity="0.70" stroke="#B26A3D" stroke-width="1.0"/>
+<circle cx="824.4" cy="273.3" r="4.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="837.0" cy="273.3" r="4.7" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="924.0" cy="401.3" r="4.7" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="936.5" cy="498.2" r="4.7" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="158.2" cy="307.9" r="4.5" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="334.0" cy="429.0" r="4.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="470.9" cy="342.5" r="4.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="483.5" cy="581.2" r="4.5" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="949.1" cy="318.3" r="4.5" fill="#3E6E8E" fill-opacity="0.10" stroke="#3E6E8E" stroke-width="1.7"/>
+<circle cx="961.7" cy="269.8" r="4.5" fill="#3E6E8E" fill-opacity="0.70" stroke="#3E6E8E" stroke-width="1.0"/>
+<circle cx="181.5" cy="584.7" r="4.0" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="194.0" cy="557.0" r="4.0" fill="#1A4D5B" fill-opacity="0.70" stroke="#1A4D5B" stroke-width="1.0"/>
+<circle cx="318.7" cy="601.0" r="4.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="496.1" cy="290.6" r="4.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="508.7" cy="256.0" r="4.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="521.2" cy="256.0" r="4.0" fill="#0A1620" fill-opacity="0.70" stroke="#0A1620" stroke-width="1.0"/>
+<circle cx="735.2" cy="429.0" r="4.0" fill="#B26A3D" fill-opacity="0.10" stroke="#B26A3D" stroke-width="1.7"/>
+<text x="155.9" y="371.9" text-anchor="middle" font-family="var(--font)" font-size="10.5" font-weight="600" fill="#1F2A36">PD-L1 · NSCLC</text>
+<text x="332.5" y="414.9" text-anchor="middle" font-family="var(--font)" font-size="10.5" font-weight="600" fill="#1F2A36">BRAF · Melanoma</text>
+<text x="345.1" y="325.0" text-anchor="middle" font-family="var(--font)" font-size="10.5" font-weight="600" fill="#1F2A36">PSMA · mCRPC</text>
+<text x="208.3" y="388.7" text-anchor="middle" font-family="var(--font)" font-size="10.5" font-weight="600" fill="#1F2A36">HER2 · breast</text>
+<text x="760.4" y="252.5" text-anchor="middle" font-family="var(--font)" font-size="10.5" font-weight="600" fill="#1F2A36">BCMA · Myeloma</text>
+<text x="156.3" y="617" text-anchor="end" transform="rotate(-34 156.3 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">PD-L1</text>
+<text x="206.6" y="617" text-anchor="end" transform="rotate(-34 206.6 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">HER2</text>
+<text x="219.2" y="617" text-anchor="end" transform="rotate(-34 219.2 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">KRAS G12C</text>
+<text x="257.0" y="617" text-anchor="end" transform="rotate(-34 257.0 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">EGFR</text>
+<text x="332.5" y="617" text-anchor="end" transform="rotate(-34 332.5 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">BRAF V600</text>
+<text x="345.1" y="617" text-anchor="end" transform="rotate(-34 345.1 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">PSMA</text>
+<text x="370.2" y="617" text-anchor="end" transform="rotate(-34 370.2 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">CLDN18.2</text>
+<text x="408.0" y="617" text-anchor="end" transform="rotate(-34 408.0 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">FLT3</text>
+<text x="470.9" y="617" text-anchor="end" transform="rotate(-34 470.9 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">KIT</text>
+<text x="533.8" y="617" text-anchor="end" transform="rotate(-34 533.8 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">TROP2</text>
+<text x="546.4" y="617" text-anchor="end" transform="rotate(-34 546.4 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">Nectin-4</text>
+<text x="609.3" y="617" text-anchor="end" transform="rotate(-34 609.3 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">Tissue Factor</text>
+<text x="621.9" y="617" text-anchor="end" transform="rotate(-34 621.9 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">B7-H3</text>
+<text x="659.7" y="617" text-anchor="end" transform="rotate(-34 659.7 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">CD30</text>
+<text x="760.4" y="617" text-anchor="end" transform="rotate(-34 760.4 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">BCMA</text>
+<text x="785.5" y="617" text-anchor="end" transform="rotate(-34 785.5 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">CD38</text>
+<text x="823.3" y="617" text-anchor="end" transform="rotate(-34 823.3 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">CD19</text>
+<text x="848.4" y="617" text-anchor="end" transform="rotate(-34 848.4 617)" font-family="var(--mono)" font-size="9" fill="#1F2A36">DLL3</text></svg>
+  <div class="rail">
+    <div class="stat"><span class="acc">~$190B</span></div>
+    <div class="statlbl">oncology market gated by these markers, across 22 indications</div>
+    <div class="counts">65 biomarkers · 22 indications · 4 drug classes</div>
+    <div class="legttl">Drug class</div>
+    <div class="lg"><span class="sw" style="background:#1A4D5B"></span><span class="ll"><b>IO</b>&nbsp; Immuno-oncology</span></div>
+<div class="lg"><span class="sw" style="background:#0A1620"></span><span class="ll"><b>TT</b>&nbsp; Targeted therapy</span></div>
+<div class="lg"><span class="sw" style="background:#B26A3D"></span><span class="ll"><b>ADC</b>&nbsp; Antibody–drug conjugate</span></div>
+<div class="lg"><span class="sw" style="background:#3E6E8E"></span><span class="ll"><b>CT</b>&nbsp; Cell therapy / TCE</span></div>
+    <div class="legttl">Status</div>
+    <div class="status"><div><span class="dotf"></span>Validated</div><div><span class="dotr"></span>Investigational</div></div>
+    <div class="legttl">Circle = market ($B)</div>
+    <div class="sizes"><svg width="64" height="40"><circle cx="14" cy="28" r="7" fill="none" stroke="#6B7689" stroke-width="1.2"/>
+      <circle cx="46" cy="22" r="17" fill="none" stroke="#6B7689" stroke-width="1.2"/></svg><span>$3B&nbsp;&nbsp;$35B</span></div>
+  </div>
+  <div class="spnote">Dashed column = what a single-plex stain sees: one marker, one read, one slice of tissue.</div>
+  <div class="footer"><span>Singular Genomics · Deerfield IC · June 2026</span>
+    <span class="src">Frequencies: peer-reviewed / FDA labels · Markets: 2024 secondary-research estimates</span>
+    <span>The atlas</span></div>
+</div></body></html>
